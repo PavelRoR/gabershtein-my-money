@@ -1,0 +1,294 @@
+#main
+	padding 120px 0 80px
+	background-image: url(../img/backs/main.png)
+	background-repeat: no-repeat
+	background-position: center
+	background-size contain
+	margin-bottom: 45px
+.general-img-main-1
+	bottom: -100px
+	left -250px
+	z-index -2
+.general-img-main-2
+	top -120px
+	right -300px
+.main
+	&-pre
+		color #8a8888
+		text-transform uppercase
+	&-title
+		font-size: 60px
+		font-family: ADP
+		font-style: italic
+		color #769b72
+		margin 25px 0 40px
+		line-height: 43px
+	&-subtitle
+		font-family: ADP
+		font-size: 40px
+		font-style: italic
+		line-height: 50px
+		margin-bottom: 40px
+		span
+			color #769b72
+	&-info
+		&-wrapper
+			position relative
+			display inline-block
+			border-radius: 10px
+			width 100%
+			max-width 160px
+			// float: left
+			&:before
+				content: ''
+				display block
+				position absolute
+				width 90%
+				height: 100px
+				border-radius: 10px
+				box-shadow: 0px 7px 13.76px 2.24px rgba(0, 0, 0, 0.08);
+				background-color #fff
+				left 0
+				right 0
+				margin 0 auto
+				bottom: -10px
+				z-index -1
+			&:first-of-type
+				margin-right: 40px
+		padding 25px
+		background-color #fff
+		border-radius: 10px;
+		box-shadow: 0px 7px 13.76px 2.24px rgba(0, 0, 0, 0.08);
+		z-index 10
+		&-text
+			font-family: ADP
+			font-size: 20px
+			font-style: italic
+			color #000
+			line-height: 26px
+			small
+				display block
+				font-family: M
+				font-size: 16px
+				font-style: normal
+				color #d8c383
+	&-img
+		position relative
+		padding-top: 100%
+		img
+			position absolute
+			top -100px
+			left 0
+		&-name
+			position absolute
+			bottom: 100px
+			left 100px
+			z-index 40
+			text-align center
+			&:before
+				content:  ''
+				display block
+				background-color: rgb(173,200,179)
+				background-image: linear-gradient(to bottom, rgb(118,155,114) 0%, rgb(173,200,179) 100%);
+				box-shadow: inset 0px 17px 20.16px 0.84px rgba(255, 255, 255, 0.89), 0 3px 0 0 #527a5a;
+				border-radius: 10px
+				position absolute
+				top: -27px
+				left -44px
+				z-index: 26;
+				width 240px
+				height 74px
+				z-index 0
+				transform: skewX(-20deg)
+			&-text
+				position relative
+				z-index 30
+				font-family: C
+				font-size: 14px
+				font-weight: bold
+				text-transform uppercase
+				text-align center
+				color #fff
+
+.form-wrapper
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 7px 13.76px 2.24px rgba(0, 0, 0, 0.08);
+	position relative
+	&:before
+		content: ''
+		display block
+		position absolute
+		z-index -1
+		border-radius: 10px
+		background-color: #fff;
+		box-shadow: 0px 7px 13.76px 2.24px rgba(0, 0, 0, 0.08);
+		position: absolute;
+		width: 94%;
+		height: 179px;
+		margin 0 auto
+		left 0
+		right 0
+		bottom: -13px
+	&-main
+		position relative
+		bottom: -30px
+		left 0
+		right 0
+		margin 0 auto
+.form
+	padding 15px 30px
+	&-main
+		padding 15px 160px
+		overflow hidden
+	&-title
+		text-align center
+		font-family: C
+		font-size: 30px
+		font-weight: bold
+		margin-bottom: 15px
+.input
+	display inline-block
+	width 100%
+	max-width 374px
+	border: 1px solid #7fa37d;
+	border-radius: 10px;
+	font-family: C
+	font-size: 16px
+	font-weight: 300
+	color #8a8888
+	padding 32px 22px
+	background-color: #FFF
+	&-mail-main
+		float: left
+	&-mail-modal
+		float: none
+		display block
+		margin 0 auto 20px
+	&::-webkit-input-placeholder
+		color:#8a8888
+		opacity:1;
+	&::-moz-placeholder
+		color:#8a8888
+		opacity:1;
+	&:-ms-input-placeholder
+		color:#8a8888
+		opacity:1;
+	@media screen and (max-width 991px)
+		padding 18px 30px
+@-webkit-keyframes autofill
+	to
+		font-size: 16px
+		color: #8a8888;
+		background-color: #FFF
+input:-webkit-autofill
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+.input:active
+input:-internal-autofill-selected
+	background-color: #FFF !important
+.button-form
+	float: right
+	padding 30px 22px
+	width 100%
+	max-width 374px
+	box-shadow: inset 0px 17px 20.16px 0.84px rgba(255, 255, 255, 0.7)
+	&-modal
+		float: none
+		display block
+		margin 0 auto
+.alert-message
+	clear both
+	display: none;
+	font-size: 16px;
+	padding-top: 10px;
+	color: #f00
+	text-align: center
+	font-weight: 700
+	line-height: 1
+.checking
+	display: table;
+	width 100%
+	max-width 455px
+	margin: 5px 0 0
+	text-align: left
+@keyframes pulse
+	0%
+		box-shadow: 0 0 0 0 rgba(red, .12)
+	100%
+		box-shadow: 0 0 15px 10px rgba(red, .12)
+.checking .check-label
+	line-height: 28px;
+	cursor: pointer;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 25px;
+	text-align: left;
+	font-family: C
+	font-size: 13px
+	font-weight: 300
+	color #b5b3b3
+	@media screen and (max-width 991px)
+		line-height: 18px
+.checking .check-label a
+	text-decoration: none
+	border-bottom: 1px dashed transparent
+	display: inline
+	color #b5b3b3
+	&:focus
+		border-bottom-color: transparent
+		color #b5b3b3
+	&:hover
+		border-bottom-color: inherit
+		text-decoration: none
+		color #b5b3b3
+.checking .check-label:before
+	content: '';
+	background-color: red;
+	position: absolute;
+	left: 0;
+	top: 3px;
+	border-radius: 5px;
+	width: 18px;
+	height: 18px;
+	animation: pulse
+	animation-duration: .7s
+	animation-iteration-count: infinite
+	animation-timing-function: ease-out;
+.checking .check-label:after
+	content: '';
+	position: absolute;
+	left: 6px;
+	top: -10px;
+	width: 6px;
+	height: 10px;
+	background-color: transparent;
+	opacity: 0;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	-webkit-transform: rotate(41deg);
+	-ms-transform: rotate(41deg);
+	transform: rotate(41deg);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+.check
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height 0;
+	border: 0;
+	left -99999px;
+.check:checked + .check-label:before
+	background-color: rgb(173,200,179)
+	background-image: linear-gradient(to top, rgb(173,200,179) 0%, rgb(118,155,114) 100%);
+	box-shadow: inset 0px 17px 20.16px 0.84px rgba(255, 255, 255, 0.89);
+	animation: none
+.check:checked + .check-label:after
+	opacity: 1;
+	top: 6px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;

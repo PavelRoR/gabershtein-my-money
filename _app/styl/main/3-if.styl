@@ -1,0 +1,56 @@
+#if
+	padding 100px 0
+	position relative
+.general-img-if-1
+	left -200px
+	top -190px
+.general-img-if-2
+	bottom: 345px
+	right -200px
+.if-item
+	width 100%
+	max-width 380px
+	margin: 0 auto 30px
+	position relative
+	&:before
+		content: ''
+		display block
+		position absolute
+		top 241px
+		left 0
+		right 0
+		margin 0 auto
+		border-radius: 50%;
+		background-color: rgb(227,227,226)
+		background-image: linear-gradient(to top, rgb(168,167,164) 0%, rgb(227,227,226) 100%);
+		width: 44px;
+		height: 44px;
+		border: 8px solid #fff
+	&:after
+		content: ''
+		display block
+		position absolute
+		top 256px
+		left 1px
+		right 0
+		margin 0 auto
+		width 9px
+		height: 12px
+		border-bottom: 2px solid #fff
+		border-right: 2px solid #fff
+		transform: rotate(35deg)
+	&-img
+		display block
+		width 100%
+		margin-bottom: 40px
+	&-text
+		text-align center
+		font-family: M
+		font-size: 20px
+		font-weight: bold
+.if-aftertitle
+	text-align center
+	margin: 55px 0 35px
+	font-family: ADP
+	font-size: 45px
+	font-style: italic

@@ -1,5 +1,5 @@
 section#main
-	.contanier
+	.container
 		.content
 			+imgs('general-img general-img-main-1', 'img/images/main-1.png', 'Ветка')
 			+imgs('general-img general-img-main-2', 'img/images/main-2.png', 'Ветка')
@@ -7,32 +7,34 @@ section#main
 				.col-md-6
 					p.main-pre Бесплатный онлайн мастер-класс
 					h1.main-title «Где мои деньги?»
-					h2.main-subtitle Получите ответ и практические советы по исправлению своей 
+					h2.main-subtitle Получите ответ и практические советы 
+						br.mb-none 
+						| по исправлению своей 
 						span финансовой ситуации.
 					.main-info-wrapper
 						.main-info
-							p.main-info
+							p.main-info-text
 								small Дата:
 								| 15&nbsp;марта 19:00&nbsp;Мск
 					.main-info-wrapper
 						.main-info
-							p.main-info
+							p.main-info-text
 								small Автор:
 								| Юлия Габерштейн
+					.clearfix
 				.col-md-6
 					.main-img
 						+imgs('', 'img/images/yuliya-main.png', 'Юлия Габерштейн')
 						.main-img-name
-							p.main-img-info-text
+							p.main-img-name-text
 								span Юлия Габерштейн
-			.form-wrapper
+			.form-wrapper.form-wrapper-main
 				form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target=form_target).form.form-main
 					h3.form-title Регистрируйтесь на мастер-класс прямо сейчас
 					.email-block.email-block-form
 						input( type="hidden" value="1" name="required_fields[email]")
 						input(class="input input-mail input-mail-main" name="Contact[email]" type="text" placeholder="Ваш Email")
-					.button-wrapper
-						button(type="submit").button.button-form.button-form-main Записаться
+					button(type="submit").button.button-form.button-form-main Записаться
 					.clearfix
 					p.alert-message
 					.checking.checking-main
