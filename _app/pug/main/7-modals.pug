@@ -1,0 +1,26 @@
+.modal#Modal-video
+	iframe(src!='https://youtube.com/embed/bWkP-mt_bOk?modestbranding=1&autoplay=1&mute=1' allowfullscreen)
+.modal#Modal
+	h3.modal-title.hide Спешите записаться!
+	form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target=form_target).form.form-modal
+		.email-block.email-block-form
+			input( type="hidden" value="1" name="required_fields[email]")
+			input(class="input input-mail input-mail-modal" name="Contact[email]" type="text" placeholder="Ваш email")
+		.button-wrapper-center
+			button(type="submit").button.button-form.button-form-modal Записаться
+		.clearfix
+		p.alert-message
+		.checking.checking-modal
+			input(type="checkbox" id="check-m").check
+			label(for="check-m").check-label Я согласен с 
+				a(href=politics target="_blank") условиями обработки
+				|  персональных данных по 152 - Ф3
+		div(style="display: none;")
+			div(style="display: none;")
+				input(type="hidden" value=group name="Contact[id_newsletter]")
+			<!-- API код канала рекламы -->
+			input(type="hidden" value="0" name="Contact[id_advertising_channel_page]")
+			input(type="hidden" name="formId" value=formId)
+			input(type="hidden" name="formVc" value=formVc)
+			input(type="hidden" name="_aid" value="")
+			input(type="hidden" name="_vcaid" value="")

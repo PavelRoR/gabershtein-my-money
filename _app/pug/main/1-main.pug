@@ -1,0 +1,51 @@
+section#main
+	.contanier
+		.content
+			+imgs('general-img general-img-main-1', 'img/images/main-1.png', 'Ветка')
+			+imgs('general-img general-img-main-2', 'img/images/main-2.png', 'Ветка')
+			.row
+				.col-md-6
+					p.main-pre Бесплатный онлайн мастер-класс
+					h1.main-title «Где мои деньги?»
+					h2.main-subtitle Получите ответ и практические советы по исправлению своей 
+						span финансовой ситуации.
+					.main-info-wrapper
+						.main-info
+							p.main-info
+								small Дата:
+								| 15&nbsp;марта 19:00&nbsp;Мск
+					.main-info-wrapper
+						.main-info
+							p.main-info
+								small Автор:
+								| Юлия Габерштейн
+				.col-md-6
+					.main-img
+						+imgs('', 'img/images/yuliya-main.png', 'Юлия Габерштейн')
+						.main-img-name
+							p.main-img-info-text
+								span Юлия Габерштейн
+			.form-wrapper
+				form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target=form_target).form.form-main
+					h3.form-title Регистрируйтесь на мастер-класс прямо сейчас
+					.email-block.email-block-form
+						input( type="hidden" value="1" name="required_fields[email]")
+						input(class="input input-mail input-mail-main" name="Contact[email]" type="text" placeholder="Ваш Email")
+					.button-wrapper
+						button(type="submit").button.button-form.button-form-main Записаться
+					.clearfix
+					p.alert-message
+					.checking.checking-main
+						input(type="checkbox" id="check-1").check
+						label(for="check-1").check-label Я согласен с 
+							a(href=politics target="_blank") условиями обработки
+							|  персональных данных по 152 - Ф3
+					div(style="display: none;")
+						div(style="display: none;")
+							input(type="hidden" value=group name="Contact[id_newsletter]")
+						<!-- API код канала рекламы -->
+						input(type="hidden" value="0" name="Contact[id_advertising_channel_page]")
+						input(type="hidden" name="formId" value=formId)
+						input(type="hidden" name="formVc" value=formVc)
+						input(type="hidden" name="_aid" value="")
+						input(type="hidden" name="_vcaid" value="")

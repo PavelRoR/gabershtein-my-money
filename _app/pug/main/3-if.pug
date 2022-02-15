@@ -1,0 +1,27 @@
+mixin ii(n, p)
+	.if-item(class='if-item-'+n)
+		+imgs('if-item-img', 'img/images/if-item-'+n+'.png', p)
+		.if-tiem-check
+		p.if-item-text=p
+
+
+section#if
+	+imgs('general-img general-img-if-1', 'img/images/if-1.png', 'Рука')
+	.container
+		.content
+			+imgs('general-img general-img-if-2', 'img/images/if-2.png', 'Перо')
+			+gt('', 'Если:')
+			.row
+				.col-md-4
+					+ii('1', 'Ваши доходы не растут')
+				.col-md-4
+					+ii('2', 'Живете в долг и увязли в кредитах')
+				.col-md-4
+					+ii('3', 'Вы начали зарабатывать больше, но денег все равно не хватает')
+			.row
+				.col-md-4.col-md-offset-2
+					+ii('4', 'Стремитесь обеспечить себе финансовую свободу и уверенность в завтрашнем дне')
+				.col-md-4
+					+ii('5', 'Хотите зарабатывать на любимом деле достойные деньги')
+			h4.if-aftertitle То этот мастер-класс для Вас!
+			+b('', 'button-up', href, 'Это для меня')
