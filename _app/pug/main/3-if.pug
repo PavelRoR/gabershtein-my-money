@@ -1,6 +1,7 @@
 mixin ii(n, p)
 	.if-item(class='if-item-'+n)
-		+imgs('if-item-img', 'img/images/if-item-'+n+'.png', p)
+		.if-item-img
+			+imgs('', 'img/images/if-item-'+n+'.png', p)
 		.if-tiem-check
 		p.if-item-text=p
 

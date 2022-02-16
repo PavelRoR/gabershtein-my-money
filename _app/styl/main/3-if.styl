@@ -4,6 +4,14 @@
 .general-img-if-1
 	left -200px
 	top -190px
+	@media screen and (max-width 991px)
+		left -300px
+	@media screen and (max-width 560px)
+		width 200px
+		left -20px
+		top -50px
+	@media screen and (max-width 386px)
+		left -120px
 .general-img-if-2
 	bottom: 345px
 	right -200px
@@ -12,45 +20,62 @@
 	max-width 380px
 	margin: 0 auto 30px
 	position relative
-	&:before
-		content: ''
-		display block
-		position absolute
-		top 241px
-		left 0
-		right 0
-		margin 0 auto
-		border-radius: 50%;
-		background-color: rgb(227,227,226)
-		background-image: linear-gradient(to top, rgb(168,167,164) 0%, rgb(227,227,226) 100%);
-		width: 44px;
-		height: 44px;
-		border: 8px solid #fff
-	&:after
-		content: ''
-		display block
-		position absolute
-		top 256px
-		left 1px
-		right 0
-		margin 0 auto
-		width 9px
-		height: 12px
-		border-bottom: 2px solid #fff
-		border-right: 2px solid #fff
-		transform: rotate(35deg)
+	@media screen and (max-width 991px)
+		margin-bottom: 50px
+	@media screen and (max-width 560px)
+		margin-bottom: 35px
 	&-img
-		display block
-		width 100%
 		margin-bottom: 40px
+		position relative
+		@media screen and (max-width 560px)
+			margin-bottom: 20px
+		img
+			display block
+			width 100%
+		&:before
+			content: ''
+			display block
+			position absolute
+			bottom: -22px
+			left 0
+			right 0
+			margin 0 auto
+			border-radius: 50%;
+			background-color: rgb(227,227,226)
+			background-image: linear-gradient(to top, rgb(168,167,164) 0%, rgb(227,227,226) 100%);
+			width: 44px;
+			height: 44px;
+			border: 8px solid #fff
+		&:after
+			content: ''
+			display block
+			position absolute
+			bottom: -4px
+			left 1px
+			right 0
+			margin 0 auto
+			width 9px
+			height: 12px
+			border-bottom: 2px solid #fff
+			border-right: 2px solid #fff
+			transform: rotate(35deg)
 	&-text
 		text-align center
 		font-family: M
 		font-size: 20px
 		font-weight: bold
+		@media screen and (max-width 560px)
+			font-size: 18px
 .if-aftertitle
 	text-align center
 	margin: 55px 0 35px
 	font-family: ADP
 	font-size: 45px
 	font-style: italic
+	@media screen and (max-width 991px)
+		margin-top: 0
+	@media screen and (max-width 560px)
+		font-size: 32px
+	@media screen and (max-width 386px)
+		font-size: 26px
+		line-height: 1.2
