@@ -200,9 +200,22 @@
 	background-image: url(../img/backs/clouds.png)
 	background-repeat: no-repeat
 	background-position: center bottom
-	background-size contain
+	background-size 100% 100%
 	@media screen and (max-width 991px)
 		padding 0 0 100px
+		background-size contain
+		background-position: center
+	// @media screen and (max-width 560px)
+.last-title
+	text-align center
+	font-size: 54px
+	font-family: ADP
+	font-style: italic
+	margin-bottom: 40px
+	@media screen and (max-width 991px)
+		font-size: 38px
+	@media screen and (max-width 560px)
+		font-size: 32px
 .form
 	&-last
 		padding 15px 160px

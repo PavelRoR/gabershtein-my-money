@@ -58,7 +58,7 @@ $(document).ready(function () {
         });
     });
     // модалка
-    $('.button-up').fancybox();
+    // $('.button-up').fancybox();
     // слайдер с видео-отзывами
     $('.revs-slider').slick({
         autoplay: false,
