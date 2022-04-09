@@ -1,0 +1,42 @@
+-var path = '../';
+-var head_url = 'https://gaberstein.de/my-money/course/';
+-var head_title = '«Где мои деньги?». Эффективная растяжка и перезагрузка ваших финансовых возможностей';
+-var head_description = 'Обучающий курс Юлии Габерштейн';
+-var styles = path+'css/course.min.css';
+-var fav_ap = path+'favicon.svg';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var libsScripts = path+'js/course-libs.min.js';
+-var scripts = path+'js/course.js';
+-var href = '#packet';
+
+
+mixin gt(cl, h3)
+	h3.general-title(class=cl)!=h3
+mixin imgs(cl, src, alt)
+	img(class=cl src=path+src alt=alt)
+mixin b(cl, clb, href, p, target, id)
+	.button-wrapper(class=cl)
+		a.button(class=clb href!=href target=target id=id)=p
+
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/course/1-main
+			include pug/course/2-for
+			include pug/course/3-plan
+			include pug/course/4-price
+			include pug/course/5-get
+			include pug/main/6-author
+			include pug/main/7-revs
+			include pug/course/6-last
+		include pug/base/2-footer
+		include pug/course/7-modals
+		include pug/base/3-scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts

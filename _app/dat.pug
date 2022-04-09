@@ -1,0 +1,36 @@
+-var path = '../';
+-var head_url = 'https://gaberstein.de/my-money/dat/';
+-var head_title = 'Datenschutzerklärung';
+// -var head_description = 'Онлайн мастер-класс Юлии Габерштейн';
+// -var head_img = 'img/banner.jpg';
+-var styles = path+'css/dat.min.css';
+-var fav_ap = path+'favicon.svg';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+// -var libsScripts = path+'js/libs.min.js';
+// -var scripts = path+'js/scripts.js';
+// -var noref = true;
+// -var action = '';
+// -var group = '';
+// -var formId = '';
+// -var formVc = '';
+//-var href = '#Modal';
+// -var href = 'https://next.edudip.com/de/webinar/besplatnyi-vebinar-gde-moi-dengi/1801258';
+//- -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+//- -var ak = true
+
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			section#main
+				.container
+					h1.main-title
+		include pug/base/2-footer
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts

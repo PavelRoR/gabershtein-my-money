@@ -1,0 +1,21 @@
+section#packet
+	.container
+		+gt('', 'В обучение входит:')
+		.packet-item-wrapper
+			.packet-item
+				ul.general-list
+					li 10 уроков
+					li домашние задания
+					li обратная связь
+					li чат курса
+				.cost
+					p Стоимость
+						span 250€
+					.button-wrapper
+						button.button.button-cost.button-cost-disabled(disabled) Оплатить
+					.checking
+						input(type="checkbox" id="check-cost").check.check-cost
+						label(for="check-cost").check-label Когда вы приступаете к оплате, вы соглашаетесь с нашими 
+							a(href="#Impressum").button-up Политикой конфиденциальности
+							|  и 
+							a(href='#AGB').button-up Условиями

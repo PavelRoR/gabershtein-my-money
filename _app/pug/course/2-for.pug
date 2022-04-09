@@ -1,0 +1,21 @@
+mixin fi(n, p)
+	.for-item-wrapper(class='for-item-wrapper-'+n)
+		.for-item
+			h4.for-item-title='0'+n
+			p.for-item-text=p
+
+
+section#for
+	.container
+		.content
+			+imgs('general-img general-img-for-1', 'img/images/if-1.png', 'Рука')
+			+imgs('general-img general-img-for-2', 'img/images/if-2.png', 'Перо')
+			+gt('', 'Этот курс необходим тем, кто:')
+			.row
+				.col-md-4
+					+fi('1','уже неоднократно пробовал увеличить свои финансовые возможности, но не достигал желаемого результата')
+				.col-md-4
+					+fi('2','не желает больше работать по найму и хочет получать доход от своего собственного дела')
+				.col-md-4
+					+fi('3','мечтает о финансовой независимости, но не знает, как сделать плавный, а главное, результативный переход в этом направлении')
+			+b('', '', href, 'Мне это необходимо')

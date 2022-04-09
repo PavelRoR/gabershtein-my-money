@@ -1,5 +1,5 @@
 .fancybox-bg
-	background-color #fff
+	// background-color #fff
 .modal
 	display none
 	cursor auto !important
@@ -35,8 +35,40 @@
 			border-radius: 10px
 			box-shadow: 0px 7px 13.76px 2.24px rgba(0, 0, 0, 0.08);
 			z-index -1
+	&-black
+		background-color #fff
+	h4
+		font-family: APD
+		font-size: 30px
+		// font-weight: bold
+		text-align center
+		margin-bottom: 35px
+		@media screen and (max-width 386px)
+			&.cookies-modal-title
+				font-size: 24px
+				margin-bottom: 20px
+	h5
+		font-size: 20px
+		font-weight: bold
+		margin-bottom: 20px
+	h6
+		font-size: 18px
+		margin: 30px 0 20px
+	p
+		margin-bottom: 10px
+		a
+			display inline-block
+			margin 0 5px
+			text-decoration underline
+			&:focus
+				color: #000
+			&:hover
+				color #000
+				text-decoration none
+	ul
+		margin: 0 0 20px 25px
 .fancybox-slide--html .fancybox-close-small
-	color #454545
+	color red
 	opacity 1
 	transition: all .5s ease
 	outline: 0
@@ -45,3 +77,31 @@
 	width 100%
 	max-width 650px
 	margin 0 auto
+.modal-cookies .fancybox-button
+	display none
+.modal .cookies-modal-text
+	font-size: 22px
+	margin: 0 auto 30px
+	text-align center
+	width 100%
+	max-width 500px
+	@media screen and (max-width 560px)
+		font-size: 18px
+		margin-bottom: 10
+.checking-buttons
+	overflow hidden
+	padding 20px 0
+.button-cookies
+	display inline-block
+	width 48%
+	margin 0 5px
+	padding 20px
+	float: left
+	@media screen and (max-width 600px)
+		margin 10px 0
+		float: none
+		width 100%
+.button-cookies-no
+	background-image: none
+	background-color: grey
+	box-shadow: inset 0px 17px 20.16px 0.84px rgba(255,255,255,0.7),0 5px 0 0 #aaa

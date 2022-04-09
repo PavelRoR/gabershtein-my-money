@@ -1,8 +1,8 @@
 -var path = '';
--var head_url = '';
+-var head_url = 'https://gaberstein.de/my-money/';
 -var head_title = '«Где мои деньги?». Получите ответ и практические советы по исправлению своей финансовой ситуации';
 -var head_description = 'Онлайн мастер-класс Юлии Габерштейн';
--var head_img = 'img/banner.jpg';
+//-var head_img = 'img/banner.jpg';
 -var styles = path+'css/styles.min.css';
 -var fav_ap = path+'favicon.svg';
 -var fav_ico = path+'favicon.ico';
@@ -43,8 +43,9 @@ html(lang="ru")
 			include pug/main/5-get
 			include pug/main/6-author
 			include pug/main/7-revs
+			include pug/main/8-last
 		include pug/base/2-footer
-		//- include pug/main/8-modals
+		include pug/main/9-modals
 		include pug/base/3-scripts
 		//- include pug/scripts/chat
 		include pug/scripts/body_bottom_scripts

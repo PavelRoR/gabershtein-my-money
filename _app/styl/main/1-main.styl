@@ -5,6 +5,8 @@
 	background-position: center
 	background-size contain
 	margin-bottom: 45px
+	@media screen and (min-width 1900px)
+		background-size: cover
 	@media screen and (max-width 991px)
 		padding 60px 0
 		margin-bottom: 0
@@ -207,7 +209,7 @@
 		padding 15px 0
 	&-main
 		// padding 15px 160px
-		padding 30px 160px
+		padding 30px 100px
 		overflow hidden
 		@media screen and (max-width 1199px)
 			// padding 15px 60px
@@ -299,8 +301,8 @@ input:-internal-autofill-selected
 	line-height: 1
 .checking
 	display: table;
-	width 100%
-	max-width 455px
+	width auto
+	// max-width 455px
 	margin: 5px 0 0
 	text-align: left
 	@media screen and (max-width 991px)
@@ -321,9 +323,11 @@ input:-internal-autofill-selected
 	padding: 0 0 0 25px;
 	text-align: left;
 	font-family: C
-	font-size: 13px
+	// font-size: 13px
+	font-size: 18px
 	font-weight: 300
-	color #b5b3b3
+	// color #b5b3b3
+	color #000
 	@media screen and (max-width 767px)
 		line-height: 18px
 .checking .check-label a
@@ -377,9 +381,10 @@ input:-internal-autofill-selected
 	border: 0;
 	left -99999px;
 .check:checked + .check-label:before
-	background-color: rgb(173,200,179)
-	background-image: linear-gradient(to top, rgb(173,200,179) 0%, rgb(118,155,114) 100%);
-	box-shadow: inset 0px 17px 20.16px 0.84px rgba(255, 255, 255, 0.89);
+	// background-color: rgb(173,200,179)
+	background-color: #000
+	// background-image: linear-gradient(to top, rgb(173,200,179) 0%, rgb(118,155,114) 100%);
+	// box-shadow: inset 0px 17px 20.16px 0.84px rgba(255, 255, 255, 0.89);
 	animation: none
 .check:checked + .check-label:after
 	opacity: 1;
